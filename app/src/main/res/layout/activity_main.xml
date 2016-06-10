@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+<!--        <TextView
+            android:text="@string/examples_of_features_tested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>-->
+
+        <Button
+            android:id="@+id/type_text_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/type_text"/>
+
+        <Button
+            android:id="@+id/spinner_selection_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/spinner_selection" />
+
+        <Button
+            android:id="@+id/custom_list_adapter_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/custom_list_adapter" />
+
+        <Button
+            android:id="@+id/dialogs_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/dialogs" />
+
+        <Button
+            android:id="@+id/recycler_view_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/RecyclerView" />
+
+        <Button
+            android:id="@+id/search_view_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/search_view" />
+
+        <Button
+            android:id="@+id/action_bar_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/actionbar" />
+
+        <Button
+            android:id="@+id/viewpager_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/viewpager" />
+
+        <Button
+            android:id="@+id/pickers_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/date_time_pickers" />
+
+        <Button
+            android:id="@+id/all_settings_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/settings" />
+
+        <Button
+            android:id="@+id/wifi_settings_button"
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_fb"
+            android:textColor="@color/Lemon"
+            android:textSize="14sp"
+            android:text="@string/wifiSettings" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
